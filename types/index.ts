@@ -12,3 +12,9 @@ export interface CustomNavBarProps {
     logo: string;
     containerStyle: string;
 }
+
+export interface ParamsIdProps {
+    params: {
+        id: string;
+    };
+}
