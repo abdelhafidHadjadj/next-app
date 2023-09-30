@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar logo={''} containerStyle={''}/>
+        <NavBar logo={''} containerStyle="header"/>
         <main>
         {children}
         </main>
-        <Footer/>
+        <Footer logo={''} containerStyle="footer-blocks"/>
         </body>
     </html>
   )

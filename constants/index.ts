@@ -28,3 +28,23 @@ export const footerLinks = [
     },
 
 ]
+
+
+export const signUpFormFields = [
+    {
+        label: "First name",
+        inputType: "text",
+    },
+    {
+        label: "Last name",
+        inputType: "text",
+    },
+    {
+        label: "Email",
+        inputType: "email",
+    },
+    {
+        label: "Password",
+        inputType: "password",
+    },
+]

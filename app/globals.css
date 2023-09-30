@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,800&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,11 +19,28 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Poppins', Courier, monospace !important;
+  font-weight: 300;
+}
+
+.header {
+  @apply border w-full flex justify-center p-2 shadow-md
+}
+.header nav {
+  @apply w-full flex justify-between items-center
+}
+.header nav ul{
+  @apply flex gap-4
+}
+
+
+footer {
+  @apply border w-full p-2 absolute bottom-0 flex
+}
+
+footer .footer-blocks {
+  @apply border flex w-[70%]
+}
+footer .imgBox {
+  @apply border w-[30%]
 }

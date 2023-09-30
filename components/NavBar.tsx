@@ -5,8 +5,13 @@ import { CustomNavBarProps } from '@/types'
 import Image from 'next/image'
 import { CustomButton } from '.'
 import { log } from 'console'
+import { useRouter } from 'next/navigation'
 const NavBar = ({logo, containerStyle}: CustomNavBarProps) => {
-  
+  function handleClick() {
+    const router = useRouter()
+    
+  }
+
   return (
     <header className={containerStyle}>
         <nav>
@@ -26,8 +31,8 @@ const NavBar = ({logo, containerStyle}: CustomNavBarProps) => {
             }
         </ul>
 
-        </nav>
         <CustomButton title="Sign Up" disabled={false} containerStyle='border p-2' btnType='button'/>
+        </nav>
     </header>  
 
 )}
