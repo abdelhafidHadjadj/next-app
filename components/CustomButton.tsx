@@ -1,6 +1,6 @@
 import { CustomButtonProps } from "@/types";
 
-export default function CustomButton({title, containerStyle, handleClick, disabled, btnType = "submit"}: CustomButtonProps) {
+export default function CustomButton({title, containerStyle, btnType,handleClick, disabled}: CustomButtonProps) {
     return(
         <button 
         disabled={disabled}

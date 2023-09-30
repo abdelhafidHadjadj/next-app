@@ -1,15 +1,30 @@
 export const navBarLinks = [
     {
-        title: "Home",
+        text: "Home",
         link: "/"
     },
     {
-        title: "Products",
+        text: "Products",
         link: "/products"
     },
     {
-        title: "About Us",
-        link: "/About Us"
+        text: "About Us",
+        link: "/about-us"
     }
 ]
 
+export const footerLinks = [
+    {
+        text: "items1",
+        link: "#"
+    },
+    {
+        text: "items2",
+        link: "#"
+    },
+    {
+        text: "items3",
+        link: "#"
+    },
+
+]

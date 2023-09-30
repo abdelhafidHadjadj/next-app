@@ -4,7 +4,8 @@ export interface CustomButtonProps {
     title: string;
     disabled: boolean;
     containerStyle: string;
-    handleClick: MouseEventHandler<HTMLButtonElement>; 
+    btnType?: "submit" | "button";
+    handleClick?: MouseEventHandler<HTMLButtonElement>; 
 }
 
 export interface CustomNavBarProps {
