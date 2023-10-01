@@ -31,3 +31,12 @@ export interface InputFieldsProps {
         }[]
     
 }
+
+export interface ProductCardProps {
+    containerStyle: string;
+    imgUrl?: string;
+    title: string;
+    link: string;
+    rating: number;
+    price: number
+}
